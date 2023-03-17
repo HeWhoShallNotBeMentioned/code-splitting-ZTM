@@ -18,6 +18,7 @@ const Page1 = (props) => {
           Learn React
         </a>
       </header>
+      <button className="disabled">Page 1</button>
       <button onClick={() => props.onRouteChange('page2')}>Page 2</button>
       <button onClick={() => props.onRouteChange('page3')}>Page 3</button>
     </div>
