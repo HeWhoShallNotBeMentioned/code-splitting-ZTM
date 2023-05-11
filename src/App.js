@@ -13,20 +13,20 @@ class App extends Component {
 
   onRouteChange = (route) => {
     // No Code Splitting
-    // this.setState({ route: route });
+    this.setState({ route: route });
 
     // With Code Splitting
-    if (route === 'page1') {
-      this.setState({ route: route });
-    } else if (route === 'page2') {
-      import('./components/Page2').then((Page2) =>
-        this.setState({ route: route, component: Page2.default })
-      );
-    } else if (route === 'page3') {
-      import('./components/Page3').then((Page3) =>
-        this.setState({ route: route, component: Page3.default })
-      );
-    }
+    // if (route === 'page1') {
+    //   this.setState({ route: route });
+    // } else if (route === 'page2') {
+    //   import('./components/Page2').then((Page2) =>
+    //     this.setState({ route: route, component: Page2.default })
+    //   );
+    // } else if (route === 'page3') {
+    //   import('./components/Page3').then((Page3) =>
+    //     this.setState({ route: route, component: Page3.default })
+    //   );
+    // }
   };
 
   render() {
